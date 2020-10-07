@@ -1,0 +1,21 @@
+{
+  "name": "gymlog-graphql",
+  "version": "1.0.0",
+  "description": "Revamp GymLog backend using graphql.",
+  "main": "./src/index.ts",
+  "repository": "https://github.com/nighostchris/gymlog-graphql.git",
+  "author": "Chris Liu",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon ./src/index.ts",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@graphql-tools/merge": "^6.2.4",
+    "apollo-server": "^2.18.2",
+    "graphql": "^15.3.0",
+    "nodemon": "^2.0.4",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.3"
+  }
+}

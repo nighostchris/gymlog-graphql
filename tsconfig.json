@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "es6",                     
+    "module": "commonjs",
+    "lib": ["es2016", "esnext.asynciterable"],
+    "outDir": "./dist",
+    "strict": true,
+    "noImplicitAny": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "strictPropertyInitialization": true,
+  },
+  "include": ["./src/**/*"]
+}
