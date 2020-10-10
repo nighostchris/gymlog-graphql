@@ -14,7 +14,8 @@ export default `
   }
 
   type AuthenticationResult {
-    status: String!
+    status: Int!
+    message: String!
     token: String
   }
 
@@ -31,6 +32,11 @@ export default `
     role: String
   }
 
+  input LoginInput {
+    username: String!
+    password: String!
+  }
+
   type Query {
     users: [User]
     user(id: ID!): User
@@ -40,5 +46,7 @@ export default `
     createUser(input: CreateUserInput!): AuthenticationResult!
     updateUser(id: ID, input: UpdateUserInput!): User!
     deleteUser(id: ID): DeleteUserPayload!
+    login(input: LoginInput!): AuthenticationResult!
+    verify(token: String!): User
   }
 `;
